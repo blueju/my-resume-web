@@ -1,8 +1,8 @@
 {
   "name": "my-resume",
   "version": "1.0.0",
-  "description": "蓝钜·简历",
-  "author": "",
+  "description": "blueju resume",
+  "author": "blueju",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",

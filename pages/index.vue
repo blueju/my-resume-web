@@ -3,10 +3,11 @@
 </template>
 
 <script>
+// 引入组件——首页
 import home from "../components/home/index";
 
 export default {
-  name: 'Index',
+  name: "index",
   components: {
     home
   }
