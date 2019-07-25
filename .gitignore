@@ -82,3 +82,6 @@ dist
 
 # Service worker
 sw.*
+
+# package-lock.json
+package-lock.json
