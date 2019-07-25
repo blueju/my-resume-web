@@ -28,16 +28,17 @@ module.exports = {
   ** Global CSS
   */
   css: [
-    'element-ui/lib/theme-chalk/index.css',
-    '@/assets/styles/common/reset.css'
+    './assets/styles/common/reset.css',
+    'element-ui/lib/theme-chalk/index.css'
   ],
 
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-    '@/plugins/element-ui'
-  ],
+  plugins: [{
+    src:'~plugins/element-ui.js',
+    ssr:true
+  }],
 
   /*
   ** Nuxt.js modules
@@ -55,5 +56,6 @@ module.exports = {
     extend(config, ctx) {
       
     }
-  }
+  },
+  vendor:['element-ui']//防止element-ui被打包多次
 }
