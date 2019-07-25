@@ -61,6 +61,9 @@ module.exports = {
    ** Build configuration
    */
   build: {
+    // 分割文件大小
+    vendor: [],
+    maxChunkSize: 300000,
     /**
      * 按需引入element-ui
      */
@@ -79,5 +82,5 @@ module.exports = {
 
     }
   },
-  vendor: ['element-ui'] //防止element-ui被打包多次
+  // vendor: ['element-ui'] //防止element-ui被打包多次
 }
